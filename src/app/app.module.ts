@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AddCourseComponent } from './add-course/add-course.component';
 import { ViewCourseComponent } from './view-course/view-course.component';
 import { RouterModule, Routes } from '@angular/router';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 const myRoute:Routes = [
   {
     path:"",
@@ -21,7 +22,8 @@ const myRoute:Routes = [
   declarations: [
     AppComponent,
     AddCourseComponent,
-    ViewCourseComponent
+    ViewCourseComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
