@@ -5,24 +5,34 @@
             <div class="row g-3 mt-4">
                 <div class="col col 12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Title</label>
-                    <input type="text" class="form-control">
+                    <input name="courseTitle" [(ngModel)]="courseTitle" type="text" class="form-control">
                 </div>
                 <div class="col col 12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Description</label>
-                    <input type="text" class="form-control">
+                    <input name="courseDescription"  [(ngModel)]="courseDescription" type="text" class="form-control">
                 </div>
                 <div class="col col 12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Duration</label>
-                    <input type="text" class="form-control">
+                    <input name="courseDuration"  [(ngModel)]="courseDuration" type="text" class="form-control">
                 </div>
                 <div class="col col 12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Date</label>
-                    <input type="text" class="form-control">
+                    <input  name="courseDate"  [(ngModel)]="courseDate"type="date" name="" id="" class="form-control">
+                    
                 </div>
                 <div class="col col 12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Venue</label>
-                    <input type="text" class="form-control">
+                    <input name="courseVenue" [(ngModel)]="courseVenue" type="text" class="form-control">
                 </div>
+
+               
+
+                <div class="col col 12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <button (click)="readValues()" class="btn btn-primary">Submit</button>
+                </div>
+
+
+                
             </div>
         </div>
     </div>
